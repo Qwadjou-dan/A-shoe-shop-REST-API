@@ -50,6 +50,15 @@ const ShopSchema = Schema({
     type: Number,
     required: true,
   },
+
+  MenShoe: [
+    {
+      MenShoeId: {
+        type: Schema.Types.ObjectId,
+        ref: "MaleShoe",
+      },
+    },
+  ],
 });
 
 //create and connect schema to model
